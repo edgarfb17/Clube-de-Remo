@@ -1,0 +1,345 @@
+
+body{
+    font-family: Source Sans Pro;
+    margin: 50px auto 0 ;
+    text-align: center;
+}
+
+@font-face{
+    font-family: Rajdhani;
+    src: url("assets/Fonts/Rajdhani-Medium.ttf");
+}
+
+ /*Propriedades reaproveitadas*/
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+i{
+    font-size: 1.0rem;
+    margin: 26px 10px;
+}
+
+.secao-alinhamento-conteudo{
+    max-width: 1400px;
+    min-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/*Seção Cabeçario*/
+
+.secao-cabecario{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    z-index: 5;
+    padding: 15px 0;
+}
+
+.secao-cabecario ul{
+    font-size: 18px;
+    margin: 0;
+}
+
+.secao-cabecario ul :hover{
+    color: rgb(90, 128, 250);
+}
+
+.titulo-cabecario{
+    font-size: 25px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.secao-cabecario span{
+    color: rgb(90, 128, 250);
+}
+
+.secao-cabecario-conteudo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao-cabecario-conteudo li, .secao-cabecario-conteudo a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    margin: 0px 8px;
+}
+
+/*Seção Banner*/
+
+.secao-banner{
+    background-image: url("assets/img-fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 93vh;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Rajdhani, sans-serif;
+}
+
+.secao-banner h1{
+    font-size: 80px;
+    margin: 0;
+}
+
+.secao-banner p{
+    margin: 0;
+}
+
+.secao-banner-background-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(25, 25, 25, .444);
+    width: 100%;
+    height: 100%;
+}
+
+.secao-banner-titulo{
+    font-size: 35px;
+    color: white;
+}
+
+.secao-banner-titulo img{
+    width: 100px;
+    height: 100px;
+}
+
+/*Seção Serviços*/
+
+.secao-servicos-galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    margin-top: 80px;
+    height: 100%;
+}
+
+.secao-infos-servicos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.secao-infos-txt{
+    text-align: left;
+    width: 65%;
+}
+
+.imgs-galeria-servicos{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.imgs-galeria-servicos img{
+    width: 100%;
+}
+
+.secao-servicos-galeria h3{
+    margin: 0;
+    padding: 16px;
+    border-bottom: 2px solid rgb(90, 128, 250);
+}
+
+/*Secao Sobre*/
+
+.sobre{
+    display: flex;
+    height: 93vh;
+    width: 100%;
+    margin-bottom: 70px;
+    font-size: 17px;
+    text-align: left;
+}
+
+.galeria-sobre{
+    width: 50vw;
+    height: 100%;
+    position: relative;
+}
+
+.background-txt-sobre{
+    width: 50vw;
+    height: 100%;
+    padding: 0 30px;
+    background-color: rgb(187, 203, 255);
+}
+
+.imgs-sobre{
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 800ms;
+}
+
+.imgs-sobre.selected{
+    opacity: 1;
+}
+
+.reservar{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 230px;
+    height: 50px;
+    border: solid 2px rgb(120, 152, 255);
+    text-align: center;
+    color: rgb(54, 98, 243);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Secao instagram*/
+
+.instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 700px;
+}
+
+.background-insta-galeria{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+.insta-txt{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instagram-galeria{
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250%;
+    height: 100%;
+}
+
+.slide{
+    height: 100%;
+    width: 100%;
+}
+
+.slide img{
+    height: 100%;
+    margin: 0 10px;
+    width: 340px;
+    border: 5px solid rgb(177, 190, 233);
+    box-sizing: border-box;  
+}
+
+.arrow-right img, .arrow-left img{
+    width: 60px;
+    position: relative;
+}
+
+.arrow-left, .arrow-right{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-left{
+    left: 0px;
+}
+
+.arrow-right{
+    right:0px;
+}
+
+.slider{
+    
+}
+
+/*Secao instagram*/
+
+/*Secao Rodape*/
+
+ .secao-background-rodape{
+    background-color: rgb(35, 150, 111);
+    color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.secao-rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    height: 50px;
+}
+
+.secao-rodape p{
+    margin: 0;
+}
+
+.secao-rodape-icons img{
+    height: 100%;
+    padding-right: 15px;
+}
+
+.secao-rodape-icons{
+    display: flex;
+    align-items: center;
+    width: calc(100% / 4 - 25px);
+    height: 50px;
+}
+
+.secao-rodape-copyright{
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid rgb(35, 114, 88) ;
+    font-size: 20px;
+}
+
+.secao-rodape-copyright p{
+    margin: 0;
+}
+ 
+
+
